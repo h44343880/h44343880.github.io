@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Discrete Mathematics Notebook</title>
+        <title>Discrete Mathematics Notebook: Graph</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         
         <style>
@@ -156,9 +156,9 @@
                             <span class="fs-2 text-white">Discrete Math Notebook</span>
                         </a>
                 
-                        <!-- <ul class="nav nav-pills">
-                            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Front Page</a></li>
-                        </ul> -->
+                        <ul class="nav nav-pills">
+                            <li class="nav-item"><a href="main.html" class="nav-link active" aria-current="page">Front Page</a></li>
+                        </ul>
                     </header>
                 </div>
             </div>
@@ -213,19 +213,48 @@
                 <div class="col-10 bg-gradient g-5 text-white">
                     <div class="item">
                         <br>
-                        <h2><a name="介紹">基本介紹</a></h2>
+                        <h2>CH5 - Tree</h2>
                         <hr>
-                        <img src="wDsONqt.jpg" class="rounded float-end">
-                        <h3>離散數學是什麼?好吃嗎?</h3>
-                        <p>離散數學(Discrete mathematics)是數學的幾個分支的總稱，研究內容為不連續(離散)的數學結構。</p>
-                        <p>舉個例子，如微積分、線性代數等屬於連續數學，通常在探討實數空間內的問題。</p>
-                        <p>而離散數學則是探討整數或是其他可以用電腦精確表達的結構，比如集合、圖形等等。</p>
-                        <a href="https://www.slideshare.net/ccckmit/ss-57362287" class="text-white clearfix">參考資料:用十分鐘搞懂《離散數學》</a>
+
+                        <h3>Tree</h3>
+                        <p>為connected undirected graph並且沒有simple circuit</p>
+                        <img src="1200px-Tree_graph.svg.png" class="img-fluid w-25 h-25">
                         <br>
                         <br>
-                        <h3 ><a name="application">應用</a></h3>
-                        <hr>
-                        <p>在寫程式的時候，常常會使用到離散數學中的數學概念，比如recursive和graph。</p>
+
+                        <h3>Rooted Tree</h3>
+                        <p>由一個vertex往下延伸的tree</p>
+                        <img src="1__oi8Yd_XmDaSYz9zz8VucA.png" class="img-fluid w-25 h-25">
+                        <br>
+                        <br>
+
+                        <h3>M-ary Rooted Tree</h3>
+                        <p>任何一個internal vertex的children都不超過m個的rooted tree</p>
+                        <br>
+                        <br>
+
+                        <h3>Complete M-ary Tree</h3>
+                        <p>除了包含full m-ary tree的定義還加上每個階層的高度要一致</p>
+                        <br>
+                        <br>
+
+                        <h3>Ordered Tree</h3>
+                        <p>每個internal vertex的children是有順序的tree</p>
+                        <br>
+                        <br>
+
+                        <h3>Preorder Traversal</h3>
+                        <p>順序為中左右(VLR)的遍歷方法</p>
+                        <br>
+                        <br>
+
+                        <h3>Inorder Traversal</h3>
+                        <p>順序為左中右(LVR)的遍歷方法</p>
+                        <br>
+                        <br>
+
+                        <h3>Postorder Traversal</h3>
+                        <p>順序為左右中(LRV)的遍歷方法</p>
                         <br>
                         <br>
                     </div>

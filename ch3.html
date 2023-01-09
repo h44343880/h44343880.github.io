@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Discrete Mathematics Notebook</title>
+        <title>Discrete Mathematics Notebook: Graph-1</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         
         <style>
@@ -156,9 +156,9 @@
                             <span class="fs-2 text-white">Discrete Math Notebook</span>
                         </a>
                 
-                        <!-- <ul class="nav nav-pills">
-                            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Front Page</a></li>
-                        </ul> -->
+                        <ul class="nav nav-pills">
+                            <li class="nav-item"><a href="main.html" class="nav-link active" aria-current="page">Front Page</a></li>
+                        </ul>
                     </header>
                 </div>
             </div>
@@ -213,26 +213,74 @@
                 <div class="col-10 bg-gradient g-5 text-white">
                     <div class="item">
                         <br>
-                        <h2><a name="介紹">基本介紹</a></h2>
+                        <h2>CH3 - Graph-1</h2>
                         <hr>
-                        <img src="wDsONqt.jpg" class="rounded float-end">
-                        <h3>離散數學是什麼?好吃嗎?</h3>
-                        <p>離散數學(Discrete mathematics)是數學的幾個分支的總稱，研究內容為不連續(離散)的數學結構。</p>
-                        <p>舉個例子，如微積分、線性代數等屬於連續數學，通常在探討實數空間內的問題。</p>
-                        <p>而離散數學則是探討整數或是其他可以用電腦精確表達的結構，比如集合、圖形等等。</p>
-                        <a href="https://www.slideshare.net/ccckmit/ss-57362287" class="text-white clearfix">參考資料:用十分鐘搞懂《離散數學》</a>
+                        <h3>Graph</h3>
+                        <p>由兩個不為空的集合V(vertices或nodes)和E(edges)組成，並且每條edge必須連接一或兩個vertices</p>
                         <br>
                         <br>
-                        <h3 ><a name="application">應用</a></h3>
-                        <hr>
-                        <p>在寫程式的時候，常常會使用到離散數學中的數學概念，比如recursive和graph。</p>
+                        
+                        <h3>Directed Graph</h3>
+                        <p>由兩個不為空的集合V(vertices或nodes)和E(edges)組成，每條邊必須連接兩個vertices，並且edge具有方向性</p>
+                        <div class="item" height="30%" width="30%">
+                          <img src="1200px-Directed_graph_no_background.svg.png" class="img-fluid w-25 h-25">
+                        </div>
                         <br>
                         <br>
-                    </div>
+
+                        <h3>Graph的種類</h3>
+                        <ul>
+                          <li>Simple graph: 每條edge都連接兩個節點，並且任兩條edge不會連接同一對vertices</li>
+                          <li>Multigraph: 可以有多條edge連接同一對vertices</li>
+                          <li>Pseudograph: 可以有多條edge連接同一對vertices，也允許edges的兩端連接同一個vertex</li>
+                        </ul>
+                        <br>
+                        <br>
+
+                        <h3>Adjacent與Incident</h3>
+                        <p>假設有兩個vertices u和v存在於一個undirected graph G之中。若u和v之間有edge e連接，則u, v之間的關係稱為adjacent(或neighbors)，而edge e則被稱為incident with u and v</p>
+                        <br>
+                        <br>
+
+                        <h3>Neighborhood</h3>
+                        <p>與某個vertex之間有edge連結的所有vertices的集合</p>
+                        <br>
+                        <br>
+                        
+                        <h3>Bipartite graph</h3>
+                        <p>若一個graph的vertices可以分成兩種不同組別，並且每個vertex所連接的vertices必定屬於另一個組別，則可稱為bipartite graph</p>
+                        <img src="Simple_bipartite_graph;_two_layers.svg.png" class="img-fluid w-25 h-25">
+                        <br>
+                        <br>
+
+                        <h3>Degree</h3>
+                        <p>指某個vertex連接的edge數量(一個loop算兩條)</p>
+                        <h5>補充</h5>
+                        <p>Handshaking theorem: 若G是一個有著m條edge的undirected graph，則Σ𝑣∈𝑉 deg(𝑣) = 2𝑚</p>
+                        <br>
+                        <br>
+                        
+                        <h3>Adjacency List</h3>
+                        <p>呈現每個vertex與和它相連的vertices的列表。</p>
+                        <br>
+                        <br>
+
+                        <h3>Adjacency Matrix</h3>
+                        <p>設graph G中有v1, v2, ⋯ v(n)共n個點，A(G)為一個n * n的矩陣。若A(ij)項皆為v(i)和v(j))之間的edges數量，則A為adjacency matrix。</p>
+                        <br>
+                        <br>
+
+                        <h3>Incidence Matrix</h3>
+                        <p>設graph G中有v1, v2, ⋯ v(n)共n個點與e1, e2, ⋯ e(m)共m個點，A(G)為一個n * m的矩陣。若A(ij)項符合「當v(i)連接e(j)時其值為一，否則為零」，則A為incidence matrix</p>
+                        <br>
+                        <br>
+
+
+
+                      </div>
                 </div>
             </div>
         </div>
     </body>
 </html>
-        
         
